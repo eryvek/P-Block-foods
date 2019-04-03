@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Oswald:200,300,400,500,600,700|Roboto+Slab:300" rel="stylesheet">
+<style>
+body{
+	overflow-x:hidden;
+}
+	ul {position:relative;
+	top:27px;
+    list-style-type: none;
+    margin-left:-9px;
+	margin-top:10px;
+    padding-top: 20px;
+    overflow: hidden;
+    background-color: #333;
+	width:50%;
+	opacity:0.5;
+	padding-left:32%;
+	height:80px;
+	overflow-x:hidden;
+}
+
+li {
+    float: left;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.navbarList{
+	margin-left:20px;
+	margin-top:10px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+	font-family:Microsoft YaHei;
+	font-size:16px;
+	text-decoration:none;
+	    overflow: hidden;
+
+	}
+
+a:hover {
+    background-color: #111;
+	height:100%;
+	transform:scale(1.05);
+}
+#mainfood{
+	position:absolute;
+	left:-7px;
+	top:-7px;
+}
+#company{position:relative;
+	top:160px;
+	text-align:center;
+	font-size:48px;
+	font-family: 'Oswald', sans-serif;
+	font-weight:700;
+	letter-spacing:1px;
+	color:white;
+}
+#foods{
+	position:relative;
+	top:140px;
+	text-align:center;
+	font-size:90px;
+	font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+	letter-spacing:2px;
+	color:white;
+	opacity:0.8;
+	font-weight:bold;
+}
+
+#welcome{
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+	font-size:34px;	
+	letter-spacing: 9px;
+}
+
+#description-welcome{
+	font-family: 'Oswald', sans-serif;
+	font-weight: 200;
+	font-size:26px;
+	letter-spacing: 2px;
+	word-spacing: 0.3em;
+}
+		
+#bakery{
+		position:absolute;
+		left:0;
+		top:1400px;
+	}
+#bakery-text-big{
+		position:absolute;
+		top:1500px;
+		color:white;
+		font-size:24px;
+		left:110px;
+	
+}
+#kitchen{
+	
+	position:absolute;
+	left:680px;
+	top:1400px;
+}
+#kitchen-text-big{
+		position:absolute;
+		top:1500px;
+		color:white;
+		font-size:24px;
+		left:900px;
+	
+}
+footer { 
+    display: block;
+	position:relative;
+	top:1350px;
+	color:blue;
+	background-color:#424242;
+	height:250px;
+	width:101%;
+	left:-9px;
+}
+.leftwaala{
+	position:relative;
+	left:-170px;
+	top:90px;
+	color:white;
+	border-radius:50%;
+	font-family; "Everleth", "apercumono", Helvetica, Roboto, Arial, sans-serif;
+}	
+#leftwaalatext{
+	position:absolute;
+	left:300px;
+	top:90px;
+	color:white;
+	font-family; "Everleth", "apercumono", Helvetica, Roboto, Arial, sans-serif;
+}
+.rightwaala{
+	position:absolute;
+	left:480px;
+	top:160px;
+	border-radius:50%;
+	
+}
+#rightwaalatext{
+	position:absolute;
+	left:300px;
+	top:150px;
+	color:white;
+	font-family; "Everleth", "apercumono", Helvetica, Roboto, Arial, sans-serif;
+}
+#register{
+	padding-left:270px;
+}
+
+{box-sizing:border-box}
+
+.slideshow-container {
+  width: 1350px;
+  position: absolute;
+  left:0px;
+  margin: auto;
+top:0px;
+}
+
+.mySlides {
+    display: none;
+}
+
+ .next {
+  cursor: pointer;
+  position: absolute;
+  top: 500px;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+.prev {
+  cursor: pointer;
+  position: absolute;
+  top: 500px;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-family: 'Oswald',sans serif;
+  font-weight: 300;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 100px;
+  width: 100%;
+  text-align: center;
+  font-family:"Everleth", "apercumono", Helvetica, Roboto, Arial, sans-serif;;
+  font-size:50px;
+  text-shadow:20px;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+#sponsorheading{
+	position:absolute;
+	left:800px;
+	top:40px;
+	color:white;
+}
+#sponsorimg
+{
+	position:absolute;
+	top:100px;
+	left:860px;
+	border-radius:50%;
+}
+</style>
+<link rel="stylesheet" href="compstyle.css">
+</head>
+<!--Initialising css folders-->
+<link rel="stylesheet" href="css/materialize.css">
+<!--Initialising javascript folders-->
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.js"></script>
+<script type="text/javascript"src="js/materialize.min.1.js"></script>
+<!--Initialising icon font-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<body>
+	<div id="thirdsection">
+		<a href="http://www.google.com"><img id="bakery" src="img/bakery.jpeg" width="50%" height="500px"></a>
+		  <div id="bakery-text">
+		    <div id="bakery-text-big">
+			  <h1>BAKERY</h1>
+			</div>	
+		  </div>
+		<a href="http://www.google.com"><img id="kitchen" src="img/kitchen.jpg" width="49%" height="500px"></a>
+		  <div id="kitchen-text">
+		    <div id="kitchen-text-big">
+			  <h1>KITCHEN</h1> 
+			</div>	
+		  </div>
+	</div>
+	<div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="img/mainfood.jpeg" style="width:100%;margin-top:-10px">
+    <div class="text">Give us a try, you'll love it!</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="img/bakery.jpeg" style="width:100%">
+    <div class="text">I want all these</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="img/kitchen.jpg" style="width:100%">
+    <div class="text">Kitchen is my Bedroom</div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+		<ul>
+		  <li><a class="navbarList" href="">Our Shop</a></li>
+		  <li><a class="navbarList" href="veg.html">Veg</a></li>
+		  <li><a class="navbarList" href="nonveg.html">Non Veg</a></li>
+		  <li><a class="navbarList" href="mailto:sharmanurag98@gmail.com">Contact Us</a></li>
+		  <li id="register"><a class="navbarList" href="Elite Club Registration.html">Register</a></li>
+
+		</ul>
+	<h1 id="company">P-BLOCK</h1>
+	<h1 id="foods">FOODS</h1>
+	<div id="secondsection">
+		<h1 id="welcome">"BHEL"COME</h1>
+		<h1 id="description-welcome">We're the new Food guys in VIT!
+			<br>P-block Foods has an extensive range of both Veg and Non-Veg foods.
+			<br>We're up and ready to serve!
+		</h1>
+	</div>
+	
+	<footer>
+	  <div id="leftwaalatext"><h3>Anurag Sharma<h3></div>
+      <img class="leftwaala" src="img/anurag.jpg" width="50px" height="50px">
+	  <div id="rightwaalatext"><h3>Prakhar Rungta<h3></div>
+	  <img class="rightwaala" src="img/prakhar.jpg" width="50px" height="50px">
+	  <h2 id="sponsorheading">Our Beloved Sponsor<h2>
+	  <img id="sponsorimg" src="img/sponsor.jpg" width="110px" height="120px">
+    </footer>
+	<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+</script>
+		
+
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!doctype html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Oswald:200,300,400,500,600,700|Roboto+Slab:300" rel="stylesheet">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<style>
+
+#loginform:hover{
+	transform:scale(1.25);			
+	transition:1s;
+	background:rgba(255,255,255,0.6);
+}
+#loginform{position:absolute;
+	top:200px;
+	left:150px;
+		transition:1s;
+
+	background:rgba(255,255,255,0.3);
+	padding: 30px;
+    
+    box-shadow: 1px 1px 30px 10px rgba(0, 0, 0, 0.6);
+			
+    border-radius: 10px;
+    border: 2px solid #000000;
+	padding-left:120px;
+	padding-right:120px;
+
+	
+}
+#signupform:hover{
+	transform:scale(1.25);
+	transition:1s;
+	background:rgba(255,255,255,0.6);
+}
+#signupform{
+		position:absolute;
+		top:200px;
+		right:150px;
+				transition:1s;
+
+		background:rgba(255,255,255,0.3);
+		padding: 30px;
+    box-shadow: 1px 1px 30px 10px rgba(0, 0, 0, 0.6);
+		border-radius: 10px;
+		border: 2px solid #000000;
+}
+#name{
+		background:rgba(255,255,255,0.7);
+		height:30px;
+		padding:3px;
+				border-radius: 3px;
+
+		border:none;
+}
+#email{
+		background:rgba(255,255,255,0.7);
+		font-color:gray;
+		height:30px;
+		padding:3px;
+				border-radius: 3px;
+border:none;
+}
+#pass{
+		background:rgba(255,255,255,0.7);
+		font-color:gray;
+		height:30px;
+		padding:3px;
+				border-radius: 3px;
+border:none;
+}
+#phone{
+		background:rgba(255,255,255,0.7);
+		font-color:gray;
+		height:30px;
+		padding:3px;
+				border-radius: 3px;
+border:none;
+
+}
+#website{
+		background:rgba(255,255,255,0.7);
+		font-color:gray;
+		height:30px;
+		padding:3px;
+				border-radius: 3px;
+				border:none;
+
+}
+#loginbutton:hover{
+		background:rgba(255,255,255,0.9);
+}
+#loginbutton{
+		position:relative;
+		left:50px;
+		font-family:'Oswald',sans-serif;
+		font-weight:200;
+		font-size:15px;
+		letter-spacing: 0.05em;
+		text-align:center;
+		display:inline block;
+		cursor:pointer;
+		border-radius:4px;
+		border:none;
+		background:rgba(255,255,255,0.5);
+		padding-left:17px;
+		padding-right:15px;
+		padding-top:7px;
+		padding-bottom:7px;
+}
+#signupbutton:hover{
+		background:rgba(255,255,255,0.9);
+}
+#signupbutton{
+		position:relative;
+		left:100px;
+		font-family:'Oswald',sans-serif;
+		font-weight:200;
+		font-size:15px;
+		letter-spacing: 0.05em;
+		text-align:center;
+		display:inline block;
+		cursor:pointer;
+		border-radius:4px;
+		border:none;
+		background:rgba(255,255,255,0.5);
+		padding-left:19px;
+		padding-right:15px;
+		padding-top:7px;
+		padding-bottom:7px;
+}
+#heading{
+		font-family: 'Oswald', sans-serif;
+		position:absolute;
+		top:40px;
+		left:34%;
+		font-size:40px;
+		font-weight:400;
+		letter-spacing: 0.1em;
+
+}
+#homebtn{
+	position:absolute;
+	top:500px;
+	left:630px;
+	width:115px;
+	height:41px;
+	font-family:tahoma;
+	border:none;
+	border-radius:10px;
+	opacity:0.5;
+	
+}
+#homebtn:hover{
+	transform:scale(1.1);
+	background-color:gray;
+}
+
+
+
+</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+</head>
+<body>	
+	
+	<img src="img/form3.jpeg" id="pic" style="position:absolute;left:0px;top:0px;height:100%;width:100%;"/>
+<div id="heading"><p>Delicious Food is Waiting</p></div>
+<hr>
+	
+		<form id="loginform" action=""> 
+			<h1 style="text-align:center;font-family:'Oswald',sans-serif; " >Login</h1>
+			<input id="name" type="text" placeholder="Username" color="black"/><br/><br/>
+			<input id="pass" type="password" placeholder="Password" color="black" /><br/><br/>
+			<input id="loginbutton" type="submit" value="Login">
+		</form>
+	
+	<div id="signupform">
+		<form action=""> 
+			<h1 style="text-align:center;font-family:'Oswald',sans-serif;">Signup</h1>
+			<input id="name" type="text"  placeholder="Name" color="black"/>
+			<input id="email" type="email" placeholder="Email" color="black" /></br></br>
+			<input id="phone" type="password" placeholder="Password" />
+			<input id="website" type="tel" placeholder="Phone" /><br/><br/>
+			<input id="signupbutton" type="submit" value="Create an Account"/>
+		</form>
+	</div>
+	<a href="main.html"><input id="homebtn" type="button" value="Home" ></a>
+	
+	
+	<script>
+	//For Email validation.##############
+		function isEmail(email) {
+		  var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+		  return regex.test(email);
+		}
+		$("#signupbutton").click(function(){
+			if(isEmail($("#email").val())==false){
+				alert("Email entered is not valid");
+			}
+			//For Phone number validation##############
+		if($.isNumeric($("#phone").val())==false)
+		{
+			alert("Your Phone number is not numeric");
+		}
+		});
+	
+	</script>
+</body>
+</html>
